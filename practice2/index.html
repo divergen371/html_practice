@@ -9,10 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <link href="img/favicon.png" rel="icon" type="image/png">
     <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+    <script src="script.js"></script>
 </head>
 <body>
-    <header class="header"></header>
-    <div class="hero"></div>
+    <header class="header">
+        <div class="site">
+            <img alt="YAMACAFE ヤマカフェ" src="img/yamacafe-w.svg">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">こだわりメニュー</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="#">営業時間</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="nav-button" onClick="navFunc()">
+            <span class="sr-only">MENU</span>
+        </button>
+    </header>
+    <div class="hero">
+        <h1>
+            <img src="img/catch.svg" alt="Take A Break">
+        </h1>
+    </div>
     <article class="menu"></article>
     <aside class="news"></aside>
     <aside class="hours"></aside>
