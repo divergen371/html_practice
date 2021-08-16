@@ -14,7 +14,11 @@
 :root {
     font-size: 100px;
 }
-
+@media (min-width: 768px) {
+    :root {
+        font-size: 7.32vw;
+    }
+}
 /* テキストの基本設定 */
 body {
     color: var(--darkgray);
@@ -404,11 +408,6 @@ body {
     height: 1.56rem;
 }
 
-.item img {
-    width: 100%;
-    object-fit: cover;
-}
-
 .item.plate .fig1 {
     flex: 0 0 85.6vw;
 }
@@ -426,6 +425,89 @@ body {
 .item.sweet img {
     height: 2rem;
 }
+
+.item img {
+    width: 100%;
+    max-height: 2rem;
+    object-fit: cover;
+}
+
+/* Food & Drink: PC版のレイアウト */
+@media (min-width: 768px) {
+    /* 基本 */
+    .item {
+        margin-top: 1rem;
+    }
+
+    .item h3 {
+        margin-bottom: 0.22rem;
+        font-size: 0.25rem;
+    }
+
+    .item h3::before {
+        width: 0.48rem;
+    }
+
+    .item p {
+        font-size: 0.16rem;
+    }
+
+    /* テキストと画像の配置　*/
+    .item {
+        display: flex;
+    }
+
+    .item .text {
+        flex: 0 0 3.12rem;
+        margin-right: 0.49rem;
+    }
+
+    .item .photo {
+        flex: 1 1 auto;
+        margin: 0;
+    }
+
+    .item img {
+        max-height: none;
+    }
+
+    /* テキストと画像の配置: カフェ */
+    .item.cafe {
+        margin-left: calc(var(--side) * 2);
+        margin-right: calc(var(--side) * -1);
+    }
+
+    .item.cafe .fig1 {
+        margin-right: -0.88rem;
+        margin-bottom: 1.11rem;
+    }
+
+    .item.cafe .fig2 {
+        flex: 0 0 auto;
+        width: calc(var(--side) *3 + 0.88rem);
+    }
+
+    .item.cafe .fig1 img {
+        height: 3.22rem;
+    }
+
+    .item.cafe .fig2 img {
+        height: 3rem;
+    }
+
+    .item.cafe .text {
+        align-self: flex-end;
+    }
+
+    .item.cafe p {
+        margin-bottom: 0.73rem;
+    }
+
+    .item.cafe h3 {
+        margin-left: -0.58rem;
+    }
+}
+
 
 /* What's New? */
 .news {
