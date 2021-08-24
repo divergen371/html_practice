@@ -5,11 +5,12 @@
     <meta content="width=device-width" name="viewport">
     <title>からふる</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link href="style.css" rel="stylesheet">
 
     <link href="img/favicon.png" rel="icon" type="image/png">
 
-    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -51,18 +52,39 @@
                 </svg>
             </h1>
             <p>いつでも思い出せるキャンディーの味</p>
+            <aside class="switch">
+                <div class="onofftext">Mode</div>
+                <div class="onoffswitch">
+                    <input class="onoffswitch-checkbox" id="myonoffswitch" name="onoffswitch"
+                           tabindex="0" type="checkbox">
+                    <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+            </aside>
         </div>
         <div class="msg">
-            <h2>はじまりは1つのキャンディーでした</h2>
-            <p>
-                わたしたちの町には古くからの甘味処がたくさんあり、カラフルで、かわいいキャンディもたくさん作られています。見ているだけでワクワクしてくる。楽しくなる。そんな気持ちを共有できたらと思って立ち上げたのが、このサイトです。
-            </p>
+            <div class="text">
+                <h2>はじまりは1つのキャンディーでした</h2>
+                <p>
+                    わたしたちの町には古くからの甘味処がたくさんあり、カラフルで、かわいいキャンディもたくさん作られています。見ているだけでワクワクしてくる。楽しくなる。そんな気持ちを共有できたらと思って立ち上げたのが、このサイトです。
+                </p>
+            </div>
         </div>
     </header>
 
     <section class="photos">
-        <h2>色とりどりのキャンディー</h2>
-        <p>わたしたちがお届けできるキャンディを紹介します。古今東西のキャンディが揃っています。</p>
+        <div class="text">
+            <h2>色とりどりのキャンディー</h2>
+            <p>わたしたちがお届けできるキャンディを紹介します。古今東西のキャンディが揃っています。</p>
+        </div>
+
+        <ul>
+            <li><img alt="" src="img/candy01.jpg"></li>
+            <li><img alt="" src="img/candy02.jpg"></li>
+            <li><img alt="" src="img/candy03.jpg"></li>
+            <li><img alt="" src="img/candy04.jpg"></li>
+            <li><img alt="" src="img/candy05.jpg"></li>
+            <li><img alt="" src="img/candy06.jpg"></li>
+        </ul>
     </section>
 
     <footer class="footer">
@@ -98,6 +120,12 @@
         <p>
             〒600-0001　京都府山寺市中央梅3-3-12<br> 0001-1234-5678
         </p>
+        <ul>
+            <li><a href="#"><i class="ri-twitter-fill"></i><span class="sr-only">Twitter</span></a></li>
+            <li><a href="#"><i class="ri-facebook-circle-fill"></i><span class="sr-only">Facebook</span></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i><span class="sr-only">Instagram</span></a></li>
+        </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
