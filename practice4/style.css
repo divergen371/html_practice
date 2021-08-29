@@ -147,8 +147,7 @@ a {
 
 /* メッセージ(基本) */
 .msg {
-    padding-top: 92px;
-    padding-bottom: 92px;
+    padding: 92px 20px;
     background-image: url(img/wall.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -162,9 +161,20 @@ a {
     font-size: 24px;
 }
 
+.msg p {
+    font-size: 12px;
+    text-align: left;
+    max-width: 32.2em;
+    margin: 19px auto 0;
+}
+
 @media (min-width: 768px) {
     .msg h2 {
         font-size: 36px;
+    }
+
+    .msg p {
+        font-size: 16px;
     }
 }
 
@@ -175,6 +185,7 @@ a {
     padding: 10px 40px;
     border-radius: 4px;
     background-color: #F1A816;
+    color: #fff;
     font-size: 16px;
 }
 
@@ -297,5 +308,66 @@ a {
     .copy {
         margin-top: 27px;
         font-size: 12px;
+    }
+}
+
+/* ヒーロヘッダー */
+.hero img {
+    height: 434px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .text {
+    margin: -65px 20px 74px;
+}
+
+.hero h1 {
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+.hero h1 br {
+    display: inline;
+}
+
+.hero p {
+    margin-top: 26px;
+    margin-bottom: 0;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero .btn {
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1088px;
+        margin: 0 auto 74px;
+        padding: 0 20px;
+    }
+
+    .hero img {
+        height: 100%;
+    }
+
+    .hero .text {
+        flex: 0 0 485px;
+        margin: 110px -139px 39px 0;
+    }
+
+    .hero p {
+        margin-top: 43px;
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        margin-top: 43px;
     }
 }
