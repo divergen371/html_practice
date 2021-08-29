@@ -29,6 +29,8 @@ h2 {
 }
 
 p {
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
     font-size: 14px;
     font-weight: 1.8;
 }
@@ -38,6 +40,7 @@ p {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -129,3 +132,170 @@ a {
     }
 }
 
+/* ヘッダー画像*/
+.headimg img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .headimg img {
+        height: 393px;
+    }
+}
+
+/* メッセージ(基本) */
+.msg {
+    padding-top: 92px;
+    padding-bottom: 92px;
+    background-image: url(img/wall.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.msg h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .msg h2 {
+        font-size: 36px;
+    }
+}
+
+/* ボタン(基本) */
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 40px;
+    border-radius: 4px;
+    background-color: #F1A816;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #EA8C06;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 10px 75px;
+        margin-top: 62px;
+        font-size: 18px;
+    }
+}
+
+/*ヘッダー＆フッター */
+.header, .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+    .header, .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1088px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header .inner02, .footer .inner02 {
+        text-align: right;
+    }
+
+    .header {
+        margin-top: 43px;
+        margin-bottom: 44px;
+    }
+}
+
+/*ヘッダー＆フッター：サイト名 */
+.site {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ヘッダー＆フッター：ナビゲーションメニュー */
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    color: #ea8c06;
+}
+
+.header .nav ul {
+    justify-content: center;
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.footer .nav ul {
+    margin-top: 35px;
+    font-size: 11px;
+}
+
+@media (min-width: 768px) {
+    .nav li:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .header .nav ul {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .footer .nab ul {
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
+
+/* ヘッダー＆フッター：住所 */
+.address {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.5;
+
+}
+
+/* ヘッダー＆フッター：コピーライト */
+.copy {
+    font-size: 11px;
+    margin-top: 19px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .copy {
+        margin-top: 27px;
+        font-size: 12px;
+    }
+}
