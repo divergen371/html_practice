@@ -371,3 +371,141 @@ a {
         margin-top: 43px;
     }
 }
+
+/* メッセージ（トップ）*/
+.msgtop {
+    margin-bottom: 74px;
+    padding: 110px 20px;
+    background-image: url(img/plan.jpg);
+}
+
+@media (min-width: 768px) {
+    .msgtop {
+        padding-right: 56px;
+        max-width: 1088px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 110px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .msgtop h2, .msgtop p {
+        max-width: 515px;
+        margin-right: 0;
+        margin-left: auto;
+        text-align: left;
+    }
+}
+
+/* 人気のシステム */
+.systems {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 74px;
+    text-align: center;
+}
+
+.systems h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 66px;
+    margin-top: 18px;
+}
+
+.sys img {
+    width: 82px;
+    border: 8px solid #7FA9AA;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.sys .subtitle {
+    margin-top: 31px;
+    margin-bottom: 0;
+    color: #888;
+    font-weight: normal;
+}
+
+.sys h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.sys p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.sys:not(:last-child) {
+    margin-bottom: 61px;
+}
+
+@media (min-width: 768px) {
+    .systems {
+        max-width: 1088px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 110px;
+    }
+
+    .system h2 {
+        margin-bottom: 72px;
+    }
+
+    .sys {
+        display: flex;
+        align-items: center;
+    }
+
+    .sys figure {
+        flex: 0 0 307px;
+    }
+
+    .sys img {
+        width: 100%;
+    }
+
+    .sys .text {
+        margin-left: 40px;
+        margin-right: 12%;
+        text-align: left;
+    }
+
+    .sys .subtitle {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .sys h3 {
+        margin-top: 18px;
+        font-size: 24px;
+    }
+
+    .sys p {
+        margin-top: 46px;
+        font-size: 16px;
+    }
+
+    .sys:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .sys:nth-child(even) {
+        margin-right: 40px;
+        margin-left: 12%;
+    }
+
+    .sys:not(:last-child) {
+        margin-bottom: 47px;
+    }
+}
