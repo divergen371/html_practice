@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* 基本：フォント */
+body {
+    font-family: sans-serif;
+}
+
+.en {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* 基本：余白 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 基本：リスト */
+ul {
+    list-style: none;
+}
+
+/* 基本：リンク */
+a {
+    color: inherit;
+}
+
+/* 基本：画像 */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.sr-only {
+    border: 0;
+    clip: rext(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* ページグリッド */
+.pageGrid {
+    display: grid;
+    grid-template-columns: 72px auto 72px;
+    grid-template-rows: 72px auto auto;
+}
+
+/*ナビゲーションボタン*/
+.nav-button {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: #98a718;
+    cursor: pointer;
+}
+
+/* SNSメニュー */
+.sns {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* 縦書きテキスト */
+.decor {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* フッター */
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
