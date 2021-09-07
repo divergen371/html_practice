@@ -61,10 +61,35 @@ img {
     cursor: pointer;
 }
 
+/* ナビゲーションボタンの白線 */
+.nav-button::before,
+.nav-button::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 32px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.nav-button::before {
+    transform: translateY(-5px);
+}
+
+.nav-button::after {
+    transform: translateY(5px);
+}
+
 /* SNSメニュー */
 .sns {
     grid-column: 3;
     grid-row: 2;
+    justify-self: end;
+    align-self: start;
+    margin-top: 187px;
+    margin-right: 10px;
+    display: grid;
+    gap: 30px;
 }
 
 /* 縦書きテキスト */
