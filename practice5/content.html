@@ -3,25 +3,81 @@
 <head>
     <meta content="width=device-width" name="viewport">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconcnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2family=Josefin+Sans;wght@400;700&display=swap">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconcnect">
+    <link href="https://fonts.googleapis.com/css2family=Josefin+Sans;wght@400;700&display=swap" rel="stylesheet">
     <title>ご案内｜CASUAL</title>
 </head>
 <body class="pageGrid">
-    <button class="nav-button">
+    <main>
+        <div class="headimg partsGrid">
+            <div class="site en">
+                CASUAL
+            </div>
+            <figure>
+                <img alt="" src="img/tent-orange.jpg">
+            </figure>
+        </div>
+        <article class="post partsGrid">
+            <h1>ご案内</h1>
+            <p>
+                2001年にオンライン専門のキャンプサイトとしてオープンして以来、CASUALは独自の情報発信を行うアウトドア系メディアおよびポータルとしてご好評をいただいております。本サイトを通してアウトドアをより身近に感じていただければ幸いです。
+            </p>
+            <p>
+                数年前にはマイナーだったキャンプも、キャンプをテーマとしたYouTubeの動画配信やコミックの人気もあり、とても身近なものになっています。
+            </p>
+            <div class="gallery">
+                <figure class="photoA"><img alt="" src="img/camp-food.jpg"></figure>
+                <figure class="photoB"><img alt="" src="img/camp-sky.jpg"></figure>
+                <figure class="photoC"><img alt="" src="img/camp-fire.jpg"></figure>
+                <figure class="photoD"><img alt="" src="img/camp-table.jpg"></figure>
+            </div>
+            <p>
+                大勢で楽しむキャンプはもちろんのこと、ひとりで楽しむソロキャンプも人気です。気軽に行けるキャンプサイトや、手軽でかさばらない道具類、簡単に設営できるテントなど、アウトドアをサポートするもろもろが進化しているのも大きいと言えるでしょう。
+            </p>
+            <p>
+                すべてを賄ってくれる「グランピング」という選択肢もあります。自分で食材を用意せず、出来合いのお惣菜やお弁当を持ち込んで自然を満喫するのも一興です。いろいろな楽しみ方、自分に合ったスタイルを見つけてみてください。
+            </p>
+        </article>
+    </main>
+    <button class="nav-button" onClick="navFunc()">
         <span class="sr-only">MENU</span>
     </button>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="">会社概要</a></li>
+            <li><a href="">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
     <ul class="sns">
-        <li><a href="#"><img src="img/logo-twitter.svg" alt=""></a></li>
-        <li><a href="#"><img src="img/logo-facebook.svg" alt=""></a></li>
-        <li><a href="#"><img src="img/logo-instagram.svg" alt=""></a></li>
+        <li><a href="#"><img alt="" src="img/logo-twitter.svg"></a></li>
+        <li><a href="#"><img alt="" src="img/logo-facebook.svg"></a></li>
+        <li><a href="#"><img alt="" src="img/logo-instagram.svg"></a></li>
     </ul>
     <div class="decor en">
         Enjoy Active Outdoor Camping
     </div>
-    <footer class="footer">
-        CASUAL
+    <footer class="footer partsGrid">
+        <div class="text">
+            <div class="site en">CASUAL</div>
+            <div class="address">
+                〒901-3125<br>
+                沖縄県島尻郡久米島町字鳥島グスク<br>
+                0997-1234-5678
+            </div>
+        </div>
+        <div class="chat en">
+            <a href="#"><img alt="" src="img/chat.svg"><br>
+                Chat Support
+            </a>
+        </div>
     </footer>
+    <script>
+        function navFunc() {
+            document.querySelector('html').classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

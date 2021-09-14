@@ -1,26 +1,88 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="ja">
 <head>
+    <meta content="width=device-width" name="viewport">
     <meta charset="UTF-8">
-    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconcnect">
+    <link href="https://fonts.googleapis.com/css2family=Josefin+Sans;wght@400;700&display=swap" rel="stylesheet">
+    <title>CASUAL</title>
 </head>
-<body>
+<body class="pageGrid">
     <main>
-        <div class="hero">
-            <h1></h1>
+        <div class="hero partsGrid">
+            <h1 class="en">CASUAL</h1>
+            <p class="en">Outdoor Camping since 2001</p>
+            <figure>
+                <img alt="" src="img/tent.jpg">
+            </figure>
         </div>
-        <div class="msg msgBlack">
-            <h2></h2>
+
+        <div class="msg msgBlack partsGrid">
+            <figure><img alt="" src="img/tent-green.jpg">
+            </figure>
+            <div class="text">
+                <h2>冒険を始める</h2>
+                <p class="text-subtitle en">Let's Start the Adventure</p>
+                <p class="text-body">冒険には準備が必要です。全部おまかせで行くもよし、道具を自分で揃えて楽しむのもよし、最小限の装備で世界各地のサイトを巡ってみるのも捨てがたい…
+                                     などなど、好みのスタイルで楽しめるのもポイントです。
+                </p>
+                <p class="text-link"><a href="content.html">詳しく見る　＞＞＞</a></p>
+            </div>
         </div>
-        <div class="msg msgWhite">
-            <h2></h2>
+        <div class="msg msgWhite partsGrid">
+            <figure>
+                <img alt="" src="img/fire.jpg">
+            </figure>
+            <div class="text">
+                <h2>カジュアルに体験する</h2>
+                <p class="text-subtitle en">Casual Outdoor Experience</p>
+                <p class="text-body">
+                    近年はアウトドアを楽しむために必要なものが全部用意されたサイトやフィールドも増えています。わからないことは優しいガイドさんが教えてくれますので、アレもコレもカジュアルに体験できるのです。
+                </p>
+                <p class="text-link"><a href="content.html">詳しく見る　＞＞＞</a></p>
+            </div>
         </div>
+
     </main>
 
-    <button class="nab-button"></button>
-    <ul class="sns"></ul>
-    <div class="decor"></div>
-    <footer class="footer"></footer>
-    body::after
+    <button class="nav-button" onClick="navFunc()">
+        <span class="sr-only">MENU</span>
+    </button>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="">会社概要</a></li>
+            <li><a href="">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <ul class="sns">
+        <li><a href="#"><img alt="" src="img/logo-twitter.svg"></a></li>
+        <li><a href="#"><img alt="" src="img/logo-facebook.svg"></a></li>
+        <li><a href="#"><img alt="" src="img/logo-instagram.svg"></a></li>
+    </ul>
+    <div class="decor en">
+        Enjoy Active Outdoor Camping
+    </div>
+    <footer class="footer partsGrid">
+        <div class="text">
+            <div class="site en">CASUAL</div>
+            <div class="address">
+                〒901-3125<br>
+                沖縄県島尻郡久米島町字鳥島グスク<br>
+                0997-1234-5678
+            </div>
+        </div>
+        <div class="chat en">
+            <a href="#"><img alt="" src="img/chat.svg"><br>
+                Chat Support
+            </a>
+        </div>
+    </footer>
+    <script>
+        function navFunc() {
+            document.querySelector("html").classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
